@@ -2,7 +2,7 @@ import threading
 import random
 import time
 
-from solution import Counter
+from solution import ThreadSafeCounter as Counter
 
 
 def increment_counter_n_times(counter, n):
