@@ -20,4 +20,11 @@ class TempFileManager:
 
 # --- START YOUR SOLUTION HERE ---
 # Ensure cleanup always happens and exceptions are not suppressed.
+class TempFileManagerFixed(TempFileManager):
+    """Minimal temp file context manager."""
+    def __init__(self, filename):
+        super().__init__(filename)
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self._temp_file = None
 # --- END OF YOUR SOLUTION ---

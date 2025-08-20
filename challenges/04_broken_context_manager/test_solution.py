@@ -1,5 +1,5 @@
 import pytest
-from solution import TempFileManager
+from solution import TempFileManagerFixed as TempFileManager
 
 def test_context_manager_cleans_up_on_success():
     """Checks that the file is cleaned up if there are no errors."""
