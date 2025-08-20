@@ -1,6 +1,6 @@
 import time
 import pytest
-from solution import find_common_elements  # changed import
+from solution import find_common_elements_optimized as find_common_elements  # changed import
 
 
 def test_find_common_elements_correctness():
