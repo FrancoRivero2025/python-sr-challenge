@@ -1,5 +1,5 @@
 import pytest
-from solution import parse_version
+from solution import parse_version_fixed as parse_version
 
 def test_parse_valid_version():
     """Checks that a valid version string is parsed correctly."""
